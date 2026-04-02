@@ -30,7 +30,7 @@ const CONFIG = {
   founderSeats: 10,
   seatsClaimed: 7,      // UPDATE as enrollments come in
   seatsLeft: 3,          // UPDATE as enrollments come in
-  programDays: 45,
+  programDays: 30,
 
   // === COUNTDOWN ===
   countdownDays: 3,      // Days from visit when offer "expires"
