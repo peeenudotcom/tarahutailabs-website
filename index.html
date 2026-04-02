@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TARAhut AI Labs — Punjab's First AI Training Center | Kotkapura</title>
+<meta name="description" content="Learn ChatGPT, Claude AI, Canva, HeyGen & 10+ AI tools at Punjab's first offline AI training center. 45-day hands-on program. Founders Batch at ₹3,999. Kotkapura.">
+<meta name="keywords" content="AI training Kotkapura, AI course Punjab, ChatGPT course, AI lab Punjab, learn AI India, TARAhut AI">
+<meta property="og:title" content="TARAhut AI Labs — Punjab's First AI Training Center">
+<meta property="og:description" content="45-day hands-on AI training. Learn 10+ tools. Founders Batch at ₹3,999. Only 25 seats.">
+<meta property="og:image" content="https://www.tarahut.com/ailabs/images/og-image.jpg">
+<meta property="og:url" content="https://www.tarahut.com/ailabs">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.tarahut.com/ailabs">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'YOUR_PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-deep: #07070f;
+  --bg-card: #0f1024;
+  --bg-card-hover: #151738;
+  --accent-cyan: #00e5ff;
+  --accent-magenta: #ff2d87;
+  --accent-gold: #ffc83a;
+  --accent-lime: #b8ff3a;
+  --text-white: #f0f0f8;
+  --text-muted: #8888aa;
+  --text-dim: #55557a;
+  --gradient-hero: linear-gradient(135deg, #0a0a20 0%, #0d0828 40%, #1a0a2e 100%);
+  --gradient-cta: linear-gradient(135deg, #00e5ff 0%, #007cf0 50%, #6366f1 100%);
+  --gradient-cta-hot: linear-gradient(135deg, #ff2d87 0%, #ff6b3a 50%, #ffc83a 100%);
+  --gradient-price: linear-gradient(135deg, #b8ff3a 0%, #00e5ff 100%);
+  --glow-cyan: 0 0 30px rgba(0,229,255,0.3);
+  --glow-magenta: 0 0 30px rgba(255,45,135,0.3);
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-deep);
+  color: var(--text-white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== UTILITY ===== */
+.container { max-width: 480px; margin: 0 auto; padding: 0 20px; }
+
+/* ===== ANIMATED BACKGROUND GRID ===== */
+.bg-grid {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background-image:
+    linear-gradient(rgba(99,102,241,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99,102,241,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none; z-index: 0;
+}
+
+/* ===== STICKY TOP BANNER ===== */
+.top-badge {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(7,7,15,0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0,229,255,0.15);
+  padding: 10px 0;
+  text-align: center;
+  animation: badgePulse 3s ease-in-out infinite;
+}
+.top-badge span {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+}
+.dot {
+  display: inline-block; width: 6px; height: 6px;
+  background: var(--accent-magenta);
+  border-radius: 50%;
+  margin-right: 8px;
+  animation: blink 1.2s infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+@keyframes badgePulse { 0%,100%{border-bottom-color:rgba(0,229,255,0.15)} 50%{border-bottom-color:rgba(255,45,135,0.3)} }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  background: var(--gradient-hero);
+  padding: 50px 0 60px;
+  text-align: center;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(ellipse at 30% 20%, rgba(0,229,255,0.08) 0%, transparent 50%),
+              radial-gradient(ellipse at 70% 80%, rgba(255,45,135,0.06) 0%, transparent 50%);
+  animation: heroGlow 8s ease-in-out infinite alternate;
+}
+@keyframes heroGlow {
+  0% { transform: translate(0,0) rotate(0deg); }
+  100% { transform: translate(-30px, 20px) rotate(3deg); }
+}
+
+.hero-content { position: relative; z-index: 2; }
+
+.hero-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(0,229,255,0.1);
+  border: 1px solid rgba(0,229,255,0.25);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-cyan);
+  margin-bottom: 24px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 8vw, 46px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  animation: fadeInUp 0.8s ease-out 0.1s both;
+}
+.hero h1 .line1 { display: block; color: var(--text-white); }
+.hero h1 .line2 {
+  display: block;
+  background: var(--gradient-price);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero h1 .line3 {
+  display: block;
+  font-size: clamp(22px, 5.5vw, 32px);
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.hero-sub {
+  font-size: 15px;
+  color: var(--text-muted);
+  max-width: 360px;
+  margin: 16px auto 24px;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+.hero-sub strong { color: var(--text-white); }
+
+/* ===== TOOL LOGOS ROW ===== */
+.tool-logos-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 28px;
+  animation: fadeInUp 0.8s ease-out 0.35s both;
+}
+.tool-logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.tool-logo-img {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: rgba(255,255,255,0.06);
+  padding: 4px;
+}
+.tool-logo-fallback {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 800; font-size: 13px;
+  font-family: var(--font-display);
+}
+.tool-logo-label {
+  font-size: 10px;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  letter-spacing: 0.5px;
+}
+
+/* ===== PRICE HERO BOX ===== */
+.price-hero-box {
+  background: var(--bg-card);
+  border: 1px solid rgba(0,229,255,0.15);
+  border-radius: 20px;
+  padding: 28px 24px;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+.price-hero-box::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: var(--gradient-cta-hot);
+}
+.offer-tag {
+  display: inline-block;
+  background: var(--gradient-cta-hot);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+.price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+.price-old {
+  font-size: 22px;
+  color: var(--text-dim);
+  text-decoration: line-through;
+  text-decoration-color: var(--accent-magenta);
+  font-weight: 500;
+}
+.price-new {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 800;
+  background: var(--gradient-price);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.price-new .rupee { font-size: 30px; }
+.price-savings {
+  font-size: 13px;
+  color: var(--accent-lime);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.price-note {
+  font-size: 12px;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+}
+
+/* ===== CTA BUTTON ===== */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 360px;
+  padding: 18px 32px;
+  border: none;
+  border-radius: 16px;
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 700;
+  color: #000;
+  background: var(--gradient-cta);
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: var(--glow-cyan);
+  animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+.cta-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 50px rgba(0,229,255,0.4);
+}
+.cta-btn::after {
+  content: '';
+  position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 2.5s ease-in-out infinite;
+}
+@keyframes shimmer { 0%{left:-100%} 50%{left:100%} 100%{left:100%} }
+
+.cta-btn-hot {
+  background: var(--gradient-cta-hot);
+  box-shadow: var(--glow-magenta);
+}
+.cta-btn-hot:hover { box-shadow: 0 0 50px rgba(255,45,135,0.4); }
+
+.cta-btn-static { animation: none; }
+
+.cta-micro {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.5px;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+/* ===== URGENCY STRIP ===== */
+.urgency-strip {
+  background: linear-gradient(90deg, #1a0a2e, #0d0828, #1a0a2e);
+  border-top: 1px solid rgba(255,45,135,0.2);
+  border-bottom: 1px solid rgba(255,45,135,0.2);
+  padding: 18px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.urgency-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.urgency-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-white);
+  font-weight: 500;
+}
+.urgency-item .icon { font-size: 18px; }
+.urgency-item .highlight {
+  color: var(--accent-magenta);
+  font-weight: 700;
+}
+
+/* ===== COUNTDOWN ===== */
+.countdown-section {
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.countdown-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-magenta);
+  margin-bottom: 16px;
+}
+.countdown-grid {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.countdown-box {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,45,135,0.2);
+  border-radius: 14px;
+  padding: 14px 18px;
+  min-width: 68px;
+  text-align: center;
+}
+.countdown-box .num {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-white);
+  line-height: 1;
+}
+.countdown-box .unit {
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+/* ===== SECTION HEADERS ===== */
+.section-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent-cyan);
+  margin-bottom: 12px;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 6vw, 34px);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+.section-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 380px;
+}
+
+/* ===== TOOLS GRID ===== */
+.tools-section { padding: 50px 0; position: relative; z-index: 1; }
+.tools-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+}
+.tool-card-featured {
+  background: linear-gradient(135deg, rgba(0,229,255,0.08), rgba(99,102,241,0.08));
+  border: 1px solid rgba(0,229,255,0.2);
+  border-radius: 16px;
+  padding: 20px 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: border-color 0.3s, transform 0.3s, background 0.3s;
+}
+.tool-card-featured:hover {
+  border-color: rgba(0,229,255,0.4);
+  transform: translateY(-3px);
+}
+.tool-card-featured .t-logo {
+  width: 52px; height: 52px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: rgba(255,255,255,0.05);
+  padding: 6px;
+  flex-shrink: 0;
+}
+.tool-card-featured .t-fallback {
+  width: 52px; height: 52px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 800; font-size: 18px;
+  font-family: var(--font-display);
+  flex-shrink: 0;
+}
+.tool-card-featured .t-name {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+.tool-card-featured .t-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.tools-secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.tool-card-sm {
+  background: var(--bg-card);
+  border: 1px solid rgba(99,102,241,0.1);
+  border-radius: 16px;
+  padding: 20px 14px;
+  text-align: center;
+  transition: border-color 0.3s, transform 0.3s, background 0.3s;
+}
+.tool-card-sm:hover {
+  border-color: rgba(0,229,255,0.3);
+  background: var(--bg-card-hover);
+  transform: translateY(-3px);
+}
+.tool-card-sm .t-logo {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+  background: rgba(255,255,255,0.05);
+  padding: 4px;
+}
+.tool-card-sm .t-fallback {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 800; font-size: 14px;
+  font-family: var(--font-display);
+  margin: 0 auto 10px;
+}
+.tool-card-sm .t-name {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.tool-card-sm .t-desc {
+  font-size: 11px;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+.tools-footer-note {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+/* ===== BENEFITS SECTION ===== */
+.benefits-section { padding: 50px 0; position: relative; z-index: 1; }
+.benefit-list { margin-top: 28px; display: flex; flex-direction: column; gap: 14px; }
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--bg-card);
+  border: 1px solid rgba(99,102,241,0.08);
+  border-radius: 14px;
+  padding: 18px 16px;
+  transition: border-color 0.3s;
+}
+.benefit-item:hover { border-color: rgba(0,229,255,0.2); }
+.benefit-icon {
+  width: 42px; height: 42px;
+  background: rgba(0,229,255,0.1);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.benefit-text h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.benefit-text p { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+/* ===== AUDIENCE SECTION ===== */
+.audience-section { padding: 50px 0; position: relative; z-index: 1; }
+.audience-cards { margin-top: 28px; display: flex; flex-direction: column; gap: 10px; }
+.audience-card {
+  display: flex; align-items: center; gap: 14px;
+  background: var(--bg-card);
+  border-left: 3px solid var(--accent-cyan);
+  border-radius: 0 14px 14px 0;
+  padding: 16px;
+  transition: background 0.3s;
+}
+.audience-card:hover { background: var(--bg-card-hover); }
+.audience-card:nth-child(2) { border-left-color: var(--accent-magenta); }
+.audience-card:nth-child(3) { border-left-color: var(--accent-gold); }
+.audience-card:nth-child(4) { border-left-color: var(--accent-lime); }
+.audience-emoji { font-size: 28px; flex-shrink: 0; }
+.audience-label { font-size: 14px; font-weight: 600; }
+.audience-sub { font-size: 11px; color: var(--text-muted); }
+
+/* ===== SOCIAL PROOF ===== */
+.proof-section { padding: 50px 0; position: relative; z-index: 1; }
+.stats-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-top: 28px;
+}
+.stat-box {
+  background: var(--bg-card);
+  border-radius: 14px;
+  padding: 20px 10px;
+  text-align: center;
+  border: 1px solid rgba(99,102,241,0.1);
+}
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  background: var(--gradient-price);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.stat-label {
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+/* ===== MENTOR SECTION ===== */
+.mentor-section { padding: 50px 0; text-align: center; position: relative; z-index: 1; }
+.mentor-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(99,102,241,0.1);
+  border-radius: 20px;
+  padding: 30px 20px;
+  margin-top: 24px;
+}
+.mentor-avatar {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  border: 3px solid rgba(0,229,255,0.3);
+  box-shadow: 0 0 20px rgba(0,229,255,0.15);
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--accent-cyan), #6366f1);
+}
+.mentor-avatar img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.mentor-avatar-fallback {
+  font-size: 36px;
+  font-weight: 800;
+  font-family: var(--font-display);
+  color: #000;
+}
+.mentor-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.mentor-title {
+  font-size: 13px;
+  color: var(--accent-cyan);
+  font-family: var(--font-mono);
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+.mentor-bio {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.mentor-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.mentor-tag {
+  background: rgba(0,229,255,0.08);
+  border: 1px solid rgba(0,229,255,0.15);
+  border-radius: 100px;
+  padding: 5px 12px;
+  font-size: 11px;
+  color: var(--accent-cyan);
+}
+
+/* ===== PRICING SECTION ===== */
+.pricing-section { padding: 60px 0; position: relative; z-index: 1; }
+.pricing-card {
+  background: linear-gradient(135deg, rgba(0,229,255,0.06), rgba(255,45,135,0.06));
+  border: 2px solid rgba(0,229,255,0.25);
+  border-radius: 24px;
+  padding: 36px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: var(--gradient-cta);
+}
+.pricing-badge {
+  display: inline-block;
+  background: var(--gradient-cta-hot);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+.pricing-includes {
+  text-align: left;
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pricing-item {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.pricing-item .check {
+  color: var(--accent-lime);
+  font-size: 16px;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+.pricing-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,229,255,0.2), transparent);
+  margin: 20px 0;
+}
+
+/* ===== FAQ ===== */
+.faq-section { padding: 50px 0; position: relative; z-index: 1; }
+.faq-list { margin-top: 24px; }
+.faq-item {
+  border-bottom: 1px solid rgba(99,102,241,0.1);
+  padding: 18px 0;
+}
+.faq-q {
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.3s;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.faq-q:hover { color: var(--accent-cyan); }
+.faq-q .arrow {
+  font-size: 18px;
+  color: var(--accent-cyan);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+.faq-item.open .faq-q .arrow { transform: rotate(45deg); }
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+.faq-item.open .faq-a {
+  max-height: 200px;
+  padding-top: 12px;
+}
+
+/* ===== FINAL CTA ===== */
+.final-cta {
+  padding: 60px 0 80px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.final-cta::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 200px;
+  background: linear-gradient(to top, rgba(0,229,255,0.05), transparent);
+  pointer-events: none;
+}
+.final-cta .emoji-big { font-size: 48px; margin-bottom: 20px; display: block; }
+.seats-left-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,45,135,0.12);
+  border: 1px solid rgba(255,45,135,0.3);
+  border-radius: 100px;
+  padding: 8px 18px;
+  margin-bottom: 20px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent-magenta);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(255,45,135,0.2); }
+  50% { box-shadow: 0 0 0 10px rgba(255,45,135,0); }
+}
+
+.enroll-box {
+  margin-top: 30px;
+  padding: 20px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid rgba(255,45,135,0.15);
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  text-align: left;
+}
+.enroll-box strong { color: var(--text-white); }
+
+/* ===== FOOTER ===== */
+.footer {
+  padding: 30px 0 40px;
+  text-align: center;
+  border-top: 1px solid rgba(99,102,241,0.1);
+  position: relative;
+  z-index: 1;
+}
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+.footer-brand span { color: var(--accent-cyan); }
+.footer-address {
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+.footer-website {
+  margin-bottom: 16px;
+}
+.footer-website a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  font-size: 13px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.5px;
+}
+.footer-website a:hover { text-decoration: underline; }
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid rgba(99,102,241,0.1);
+  border-radius: 12px;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 500;
+  transition: border-color 0.3s, background 0.3s;
+}
+.social-card:hover {
+  border-color: rgba(0,229,255,0.3);
+  background: var(--bg-card-hover);
+  color: var(--text-white);
+}
+.social-card svg { flex-shrink: 0; }
+
+.footer-phone {
+  margin-bottom: 12px;
+}
+.footer-phone a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 13px;
+  font-family: var(--font-mono);
+}
+.footer-phone a:hover { color: var(--accent-cyan); }
+.footer-legal { font-size: 10px; color: var(--text-dim); }
+
+/* ===== FLOATING WhatsApp ===== */
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: waBounce 3s ease-in-out infinite;
+}
+.wa-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(37,211,102,0.5);
+}
+.wa-float svg { width: 30px; height: 30px; fill: #fff; }
+@keyframes waBounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(min-width: 768px) {
+  .container { max-width: 560px; }
+}
+</style>
+</head>
+<body>
+
+<div class="bg-grid"></div>
+
+<!-- ===== STICKY TOP BANNER ===== -->
+<div class="top-badge">
+  <span><span class="dot"></span> Limited Offer — Only 10 Seats at Launch Price</span>
+</div>
+
+<!-- ===== FLOATING WHATSAPP ===== -->
+<a href="https://wa.me/919876120079?text=Hi%20Mr.%20P!%20I'm%20interested%20in%20TARAhut%20AI%20Labs%20Founders%20Batch." class="wa-float" target="_blank" rel="noopener" onclick="trackLead()">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.9 15.9 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.312 22.614c-.39 1.1-1.932 2.014-3.166 2.28-.846.18-1.95.324-5.668-1.218-4.762-1.972-7.824-6.804-8.062-7.118-.228-.314-1.924-2.562-1.924-4.888s1.218-3.468 1.65-3.942c.432-.474.944-.592 1.258-.592.314 0 .628.002.902.016.29.014.678-.11 1.06.808.39.944 1.336 3.27 1.452 3.506.118.236.196.512.04.826-.158.314-.236.512-.472.786-.236.276-.496.616-.708.826-.236.236-.482.492-.208.964.276.472 1.226 2.022 2.632 3.276 1.812 1.614 3.34 2.114 3.812 2.35.472.236.748.196 1.024-.118.276-.314 1.178-1.374 1.494-1.846.314-.472.63-.39 1.06-.236.432.158 2.756 1.3 3.228 1.536.472.236.786.354.904.55.114.196.114 1.14-.278 2.24z"/></svg>
+</a>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-chip">
+      <span style="font-size:14px">&#x1F4CD;</span> Now in Kotkapura, Punjab
+    </div>
+
+    <h1>
+      <span class="line1">Punjab's First</span>
+      <span class="line2">AI Training Lab</span>
+      <span class="line3">is Now Open.</span>
+    </h1>
+
+    <p class="hero-sub">
+      Learn <strong>ChatGPT, Claude, Canva AI, HeyGen</strong> &amp; more — hands-on, offline, in your city. Real skills. Real earning potential.
+    </p>
+
+    <!-- Tool Logos Row -->
+    <div class="tool-logos-row">
+      <div class="tool-logo-item">
+        <img class="tool-logo-img" src="images/chatgpt-logo.png" alt="ChatGPT" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="tool-logo-fallback" style="display:none;background:#10a37f">GPT</div>
+        <span class="tool-logo-label">ChatGPT</span>
+      </div>
+      <div class="tool-logo-item">
+        <img class="tool-logo-img" src="images/claude-logo.webp" alt="Claude" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="tool-logo-fallback" style="display:none;background:#d4a27f">C</div>
+        <span class="tool-logo-label">Claude</span>
+      </div>
+      <div class="tool-logo-item">
+        <img class="tool-logo-img" src="images/canva-logo.png" alt="Canva" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="tool-logo-fallback" style="display:none;background:#7d2ae8">Ca</div>
+        <span class="tool-logo-label">Canva</span>
+      </div>
+      <div class="tool-logo-item">
+        <img class="tool-logo-img" src="images/heygen-logo.png" alt="HeyGen" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="tool-logo-fallback" style="display:none;background:#5046e5">HG</div>
+        <span class="tool-logo-label">HeyGen</span>
+      </div>
+    </div>
+
+    <!-- Price Box -->
+    <div class="price-hero-box">
+      <span class="offer-tag">&#x1F525; Founders Batch Offer</span>
+      <div class="price-row">
+        <span class="price-old">&#x20B9;7,999</span>
+        <span class="price-new"><span class="rupee">&#x20B9;</span>3,999</span>
+      </div>
+      <div class="price-savings">You save &#x20B9;4,000 — 50% OFF</div>
+      <div class="price-note">Only for the first 10 students</div>
+    </div>
+
+    <a href="#" class="cta-btn cta-btn-hot" onclick="payNow(); return false;">
+      &#x1F680; Grab Your Seat Now — Pay &#x20B9;3,999
+    </a>
+    <div class="cta-micro">&#x26A1; 3 seats already claimed — don't wait</div>
+  </div>
+</section>
+
+<!-- ===== URGENCY STRIP ===== -->
+<div class="urgency-strip">
+  <div class="urgency-inner">
+    <div class="urgency-item">
+      <span class="icon">&#x1F3AF;</span>
+      <span>Only <span class="highlight">25 Seats</span> Total</span>
+    </div>
+    <div class="urgency-item">
+      <span class="icon">&#x23F0;</span>
+      <span><span class="highlight">10 Seats</span> at &#x20B9;3,999</span>
+    </div>
+    <div class="urgency-item">
+      <span class="icon">&#x1F4C5;</span>
+      <span><span class="highlight">45-Day</span> Program</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== COUNTDOWN ===== -->
+<div class="countdown-section reveal">
+  <div class="container">
+    <div class="countdown-label">&#x23F3; Founders Price Ends In</div>
+    <div class="countdown-grid">
+      <div class="countdown-box"><div class="num" id="cd-days">03</div><div class="unit">Days</div></div>
+      <div class="countdown-box"><div class="num" id="cd-hrs">14</div><div class="unit">Hours</div></div>
+      <div class="countdown-box"><div class="num" id="cd-min">27</div><div class="unit">Mins</div></div>
+      <div class="countdown-box"><div class="num" id="cd-sec">45</div><div class="unit">Secs</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== TOOLS YOU'LL MASTER ===== -->
+<section class="tools-section reveal">
+  <div class="container">
+    <div class="section-tag">// master these tools</div>
+    <h2 class="section-title">AI Tools That Companies<br>Pay Premium For</h2>
+    <p class="section-subtitle">Master the tools that top companies and freelancers worldwide use every single day.</p>
+
+    <div class="tools-grid">
+      <!-- Featured Tool Cards -->
+      <div class="tool-card-featured">
+        <img class="t-logo" src="images/chatgpt-logo.png" alt="ChatGPT" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="t-fallback" style="display:none;background:#10a37f">GPT</div>
+        <div>
+          <div class="t-name">ChatGPT</div>
+          <div class="t-desc">Prompt engineering &amp; content mastery</div>
+        </div>
+      </div>
+
+      <div class="tool-card-featured">
+        <img class="t-logo" src="images/claude-logo.png" alt="Claude AI" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="t-fallback" style="display:none;background:#d4a27f">C</div>
+        <div>
+          <div class="t-name">Claude AI</div>
+          <div class="t-desc">Advanced reasoning &amp; business writing</div>
+        </div>
+      </div>
+
+      <div class="tool-card-featured">
+        <img class="t-logo" src="images/canva-logo.png" alt="Canva AI" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="t-fallback" style="display:none;background:#7d2ae8">Ca</div>
+        <div>
+          <div class="t-name">Canva AI</div>
+          <div class="t-desc">Design like a pro — zero design skills needed</div>
+        </div>
+      </div>
+
+      <div class="tool-card-featured">
+        <img class="t-logo" src="images/heygen-logo.png" alt="HeyGen" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="t-fallback" style="display:none;background:#5046e5">HG</div>
+        <div>
+          <div class="t-name">HeyGen</div>
+          <div class="t-desc">AI avatars &amp; professional video creation</div>
+        </div>
+      </div>
+
+      <!-- Secondary Tools -->
+      <div class="tools-secondary">
+        <div class="tool-card-sm">
+          <img class="t-logo" src="images/elevenlabs-logo.png" alt="ElevenLabs" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="t-fallback" style="display:none;background:#000">11</div>
+          <div class="t-name">ElevenLabs</div>
+          <div class="t-desc">AI voice cloning &amp; dubbing</div>
+        </div>
+        <div class="tool-card-sm">
+          <div class="t-fallback" style="display:flex;background:linear-gradient(135deg,#1a0a2e,#6366f1)">&#x1F5BC;&#xFE0F;</div>
+          <div class="t-name">AI Images</div>
+          <div class="t-desc">Stunning image generation</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tools-footer-note">+ AI for Business &amp; Freelancing Module</div>
+  </div>
+</section>
+
+<!-- ===== CTA BREAK #1 ===== -->
+<div class="reveal" style="text-align:center; padding: 10px 20px 40px;">
+  <a href="https://wa.me/919876120079?text=Hi!%20Can%20you%20share%20the%20full%20AI%20Labs%20curriculum%20details?" class="cta-btn cta-btn-static" target="_blank" rel="noopener" onclick="trackLead()">
+    &#x1F4E9; Ask About Full Curriculum
+  </a>
+</div>
+
+<!-- ===== WHAT YOU GET ===== -->
+<section class="benefits-section reveal">
+  <div class="container">
+    <div class="section-tag">// everything included</div>
+    <h2 class="section-title">What You Get<br>Inside the Lab</h2>
+
+    <div class="benefit-list">
+      <div class="benefit-item">
+        <div class="benefit-icon">&#x1F5A5;&#xFE0F;</div>
+        <div class="benefit-text">
+          <h4>Dedicated Computer Access</h4>
+          <p>HP All-in-One PCs with high-speed internet. No laptop needed.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">&#x1F468;&#x200D;&#x1F3EB;</div>
+        <div class="benefit-text">
+          <h4>Expert AI Trainer</h4>
+          <p>Learn from an industry-trained AI specialist — not random YouTube videos.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">&#x1F9EA;</div>
+        <div class="benefit-text">
+          <h4>Hands-On Every Single Day</h4>
+          <p>40% guided practice + 40% real projects. You build a portfolio, not just notes.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">&#x1F4DC;</div>
+        <div class="benefit-text">
+          <h4>Completion Certificate</h4>
+          <p>TARAhut AI Labs certified — perfect for your resume and LinkedIn profile.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">&#x1F91D;</div>
+        <div class="benefit-text">
+          <h4>Job &amp; Freelance Guidance</h4>
+          <p>Learn how to earn with AI — local business services &amp; freelancing pathways.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">&#x267E;&#xFE0F;</div>
+        <div class="benefit-text">
+          <h4>Lifetime Community</h4>
+          <p>WhatsApp alumni group — stay updated, connected, and keep growing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHO IS THIS FOR ===== -->
+<section class="audience-section reveal">
+  <div class="container">
+    <div class="section-tag">// for you if</div>
+    <h2 class="section-title">Is This For You?<br><span style="color:var(--accent-cyan)">100% Yes If…</span></h2>
+
+    <div class="audience-cards">
+      <div class="audience-card">
+        <span class="audience-emoji">&#x1F393;</span>
+        <div>
+          <div class="audience-label">Students &amp; Fresh Graduates</div>
+          <div class="audience-sub">Add AI skills to your resume before the competition does</div>
+        </div>
+      </div>
+      <div class="audience-card">
+        <span class="audience-emoji">&#x1F50D;</span>
+        <div>
+          <div class="audience-label">Job Seekers &amp; Unemployed Youth</div>
+          <div class="audience-sub">Learn the skills companies are actively hiring for right now</div>
+        </div>
+      </div>
+      <div class="audience-card">
+        <span class="audience-emoji">&#x1F3EA;</span>
+        <div>
+          <div class="audience-label">Small Business Owners</div>
+          <div class="audience-sub">Cut marketing costs &amp; boost sales with AI automation</div>
+        </div>
+      </div>
+      <div class="audience-card">
+        <span class="audience-emoji">&#x1F680;</span>
+        <div>
+          <div class="audience-label">Anyone Curious About AI</div>
+          <div class="audience-sub">No coding needed. Zero to AI-skilled in 45 days.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BREAK #2 ===== -->
+<div class="reveal" style="text-align:center; padding: 30px 20px 10px;">
+  <a href="https://wa.me/919876120079?text=Hi!%20I%20want%20to%20reserve%20my%20seat%20in%20TARAhut%20AI%20Labs%20at%20%E2%82%B93%2C999!" class="cta-btn cta-btn-hot cta-btn-static" target="_blank" rel="noopener" onclick="trackLead()">
+    &#x1F525; Reserve My Seat at &#x20B9;3,999
+  </a>
+  <div class="cta-micro" style="animation:none;">&#x1F4AC; Message on WhatsApp — instant reply guaranteed</div>
+</div>
+
+<!-- ===== SOCIAL PROOF ===== -->
+<section class="proof-section reveal">
+  <div class="container">
+    <div class="section-tag">// why trust us</div>
+    <h2 class="section-title">25 Years of Helping<br>Students Succeed</h2>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <div class="stat-num">25+</div>
+        <div class="stat-label">Years in Education</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">5K+</div>
+        <div class="stat-label">Students Guided</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">1st</div>
+        <div class="stat-label">AI Lab in Punjab</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MEET YOUR MENTOR ===== -->
+<section class="mentor-section reveal">
+  <div class="container">
+    <div class="section-tag">// your mentor</div>
+    <h2 class="section-title">Learn From Someone<br>Who's Been There</h2>
+
+    <div class="mentor-card">
+      <div class="mentor-avatar">
+        <img src="images/mr-p-photo.jpg" alt="Mr. Parveen Sukhija" onerror="this.style.display='none';this.parentElement.querySelector('.mentor-avatar-fallback').style.display='block'">
+        <span class="mentor-avatar-fallback" style="display:none">MP</span>
+      </div>
+      <div class="mentor-name">Mr. Parveen Sukhija</div>
+      <div class="mentor-title">Founder, TARAhut AI Labs</div>
+      <p class="mentor-bio">
+        25+ years in international education. Helped thousands build careers globally. Now bringing the AI revolution to Punjab — starting from Kotkapura. Because the future shouldn't only belong to metros.
+      </p>
+      <div class="mentor-tags">
+        <span class="mentor-tag">25+ Years</span>
+        <span class="mentor-tag">5 Countries</span>
+        <span class="mentor-tag">AI Practitioner</span>
+        <span class="mentor-tag">Art of Living</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FULL PRICING ===== -->
+<section class="pricing-section reveal">
+  <div class="container">
+    <div class="section-tag">// pricing</div>
+    <h2 class="section-title" style="text-align:center;">One Program.<br>Zero Hidden Costs.</h2>
+
+    <div class="pricing-card" style="margin-top:24px;">
+      <span class="pricing-badge">&#x1F381; Founders Batch — First 10 Only</span>
+
+      <div class="price-row" style="margin-top:16px;">
+        <span class="price-old">&#x20B9;7,999</span>
+        <span class="price-new"><span class="rupee">&#x20B9;</span>3,999</span>
+      </div>
+      <div class="price-savings">Save 50% — &#x20B9;4,000 OFF</div>
+
+      <div class="pricing-divider"></div>
+
+      <div class="pricing-includes">
+        <div class="pricing-item"><span class="check">&#x2713;</span> 45-Day Complete AI Training Program</div>
+        <div class="pricing-item"><span class="check">&#x2713;</span> 10+ Industry AI Tools Covered</div>
+        <div class="pricing-item"><span class="check">&#x2713;</span> Daily Hands-On Practice Sessions</div>
+        <div class="pricing-item"><span class="check">&#x2713;</span> Dedicated Computer &amp; High-Speed Internet</div>
+        <div class="pricing-item"><span class="check">&#x2713;</span> Expert Trainer Support Throughout</div>
+        <div class="pricing-item"><span class="check">&#x2713;</span> Real-World Projects Portfolio</div>
+        <div class="pricing-item"><span class="check">&#x2713;</span> Official Completion Certificate</div>
+        <div class="pricing-item"><span class="check">&#x2713;</span> Job &amp; Freelance Career Guidance</div>
+        <div class="pricing-item"><span class="check">&#x2713;</span> Lifetime Alumni Community Access</div>
+      </div>
+
+      <a href="#" class="cta-btn cta-btn-hot cta-btn-static" onclick="payNow(); return false;">
+        &#x1F4B0; Pay &#x20B9;3,999 &amp; Claim Your Seat
+      </a>
+      <div class="cta-micro" style="animation:none;">After 10 seats &#x2192; Price goes back to &#x20B9;7,999</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq-section reveal">
+  <div class="container">
+    <div class="section-tag">// questions</div>
+    <h2 class="section-title">Got Questions?<br>We've Got Answers.</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Do I need any tech background?
+          <span class="arrow">+</span>
+        </div>
+        <div class="faq-a">Absolutely not! Our program starts from zero. If you can use a smartphone, you can learn AI. We build up step by step — no prior knowledge required.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Do I need to bring my own laptop?
+          <span class="arrow">+</span>
+        </div>
+        <div class="faq-a">No! We provide HP All-in-One computers with high-speed internet. Just show up with a notebook and start learning.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What time are the classes?
+          <span class="arrow">+</span>
+        </div>
+        <div class="faq-a">Multiple batches — morning and evening. We'll help you find the timing that works best for your schedule when you enroll.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Can I get a job after this course?
+          <span class="arrow">+</span>
+        </div>
+        <div class="faq-a">AI skills are in massive demand. We include job and freelancing guidance as part of the program. Local businesses are actively looking for people with these skills.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Is &#x20B9;3,999 the total cost? Any hidden charges?
+          <span class="arrow">+</span>
+        </div>
+        <div class="faq-a">&#x20B9;3,999 is everything — 45 days of training, computer access, materials, certificate, and lifetime community. Zero hidden charges. Total value is &#x20B9;7,999+.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What if I miss a class?
+          <span class="arrow">+</span>
+        </div>
+        <div class="faq-a">We offer catch-up support and access to learning materials. But for the best results, we recommend regular attendance.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta reveal">
+  <div class="container">
+    <span class="emoji-big">&#x1F9E0;</span>
+
+    <div class="seats-left-badge">
+      <span class="dot"></span>
+      Only 7 Founders Seats Left
+    </div>
+
+    <h2 class="section-title" style="text-align:center; margin-bottom:10px;">
+      The AI Wave Won't Wait.<br>
+      <span style="color:var(--accent-cyan)">Will You?</span>
+    </h2>
+
+    <p class="section-subtitle" style="text-align:center; margin: 0 auto 28px;">
+      &#x20B9;3,999 today &#x2192; Skills that earn for a lifetime. This is the best investment you'll make this year.
+    </p>
+
+    <a href="#" class="cta-btn cta-btn-hot cta-btn-static" onclick="payNow(); return false;">
+      &#x1F3AF; Yes! Pay &#x20B9;3,999 &amp; Reserve My Seat
+    </a>
+    <div class="cta-micro" style="animation:none;">
+      &#x1F4DE; Or call directly: <a href="tel:+919815063184" style="color:var(--accent-cyan);text-decoration:none;">+91 98150-63184</a>
+    </div>
+
+    <div class="enroll-box">
+      <strong>&#x26A1; How to Enroll:</strong><br>
+      1&#xFE0F;&#x20E3; Click the button above<br>
+      2&#xFE0F;&#x20E3; Pay &#x20B9;3,999 securely online (UPI / Card / Net Banking)<br>
+      3&#xFE0F;&#x20E3; We'll WhatsApp you with batch details instantly<br>
+      4&#xFE0F;&#x20E3; Show up on Day 1 and start learning!
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">TARA<span>hut</span> AI Labs</div>
+    <div class="footer-address">Kotkapura, Punjab, India<br>A TARAhut Education Initiative</div>
+    <div class="footer-website">
+      <a href="https://www.tarahut.com/ailabs">&#x1F310; www.tarahut.com/ailabs</a>
+    </div>
+
+    <div class="footer-socials">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/TARAhutAILabs" target="_blank" rel="noopener" class="social-card">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="ig-grad" x1="0" y1="24" x2="24" y2="0">
+              <stop offset="0%" stop-color="#feda75"/>
+              <stop offset="25%" stop-color="#fa7e1e"/>
+              <stop offset="50%" stop-color="#d62976"/>
+              <stop offset="75%" stop-color="#962fbf"/>
+              <stop offset="100%" stop-color="#4f5bd5"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#ig-grad)" stroke-width="2"/>
+          <circle cx="12" cy="12" r="5" stroke="url(#ig-grad)" stroke-width="2"/>
+          <circle cx="18" cy="6" r="1.5" fill="url(#ig-grad)"/>
+        </svg>
+        @TARAhutAILabs
+      </a>
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/@TARAhutAILabs" target="_blank" rel="noopener" class="social-card">
+        <svg width="20" height="16" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="28" height="20" rx="5" fill="#FF0000"/>
+          <path d="M11 5.5L19 10L11 14.5V5.5Z" fill="white"/>
+        </svg>
+        @TARAhutAILabs
+      </a>
+    </div>
+
+    <div class="footer-phone">
+      <a href="tel:+919815063184">&#x1F4F1; +91 98150-63184</a>
+    </div>
+
+    <div class="footer-legal">&copy; 2026 TARAhut AI Labs. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="config.js"></script>
+<script>
+// ===== COUNTDOWN TIMER =====
+(function(){
+  const target = new Date();
+  target.setDate(target.getDate() + (typeof CONFIG !== 'undefined' ? CONFIG.countdownDays : 3));
+  target.setHours(23,59,59,0);
+
+  function update(){
+    const now = new Date();
+    let diff = Math.max(0, Math.floor((target - now)/1000));
+    const d = Math.floor(diff / 86400); diff %= 86400;
+    const h = Math.floor(diff / 3600); diff %= 3600;
+    const m = Math.floor(diff / 60);
+    const s = diff % 60;
+    document.getElementById('cd-days').textContent = String(d).padStart(2,'0');
+    document.getElementById('cd-hrs').textContent = String(h).padStart(2,'0');
+    document.getElementById('cd-min').textContent = String(m).padStart(2,'0');
+    document.getElementById('cd-sec').textContent = String(s).padStart(2,'0');
+  }
+  update();
+  setInterval(update, 1000);
+})();
+
+// ===== FAQ TOGGLE =====
+function toggleFaq(el){
+  const item = el.parentElement;
+  // Close other open items
+  document.querySelectorAll('.faq-item.open').forEach(function(openItem){
+    if(openItem !== item) openItem.classList.remove('open');
+  });
+  item.classList.toggle('open');
+}
+
+// ===== SCROLL REVEAL =====
+var observer = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting) e.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(function(el){ observer.observe(el); });
+
+// ===== META PIXEL TRACKING =====
+function trackLead(){
+  if(typeof fbq === 'function') fbq('track', 'Lead');
+}
+function trackCheckout(){
+  if(typeof fbq === 'function'){
+    fbq('track', 'Lead');
+    fbq('track', 'InitiateCheckout');
+  }
+}
+
+// ===== RAZORPAY PAYMENT =====
+function payNow(){
+  var options = {
+    key: CONFIG.razorpayKeyId,
+    amount: CONFIG.offerPrice * 100,
+    currency: "INR",
+    name: CONFIG.businessName,
+    description: "AI Labs Founders Batch — 45-Day Program",
+    handler: function(response){
+      trackCheckout();
+      if(typeof fbq === 'function') fbq('track', 'Purchase', { value: CONFIG.offerPrice, currency: 'INR' });
+      window.open(
+        "https://wa.me/" + CONFIG.whatsappNumber +
+        "?text=Hi%20Mr.%20P!%20I%20just%20paid%20for%20the%20AI%20Labs%20Founders%20Batch.%20Payment%20ID%3A%20" +
+        response.razorpay_payment_id,
+        "_blank"
+      );
+      alert("Payment Successful! \n\nPayment ID: " + response.razorpay_payment_id + "\n\nWe'll WhatsApp you with batch details shortly!");
+    },
+    prefill: { name: "", email: "", contact: "" },
+    theme: { color: "#00e5ff" }
+  };
+  var rzp = new Razorpay(options);
+  rzp.open();
+}
+</script>
+
+</body>
+</html>
