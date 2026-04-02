@@ -28,8 +28,8 @@ const CONFIG = {
   // === CAPACITY ===
   totalSeats: 25,
   founderSeats: 10,
-  seatsClaimed: 3,      // UPDATE as enrollments come in
-  seatsLeft: 7,          // UPDATE as enrollments come in
+  seatsClaimed: 7,      // UPDATE as enrollments come in
+  seatsLeft: 3,          // UPDATE as enrollments come in
   programDays: 45,
 
   // === COUNTDOWN ===
